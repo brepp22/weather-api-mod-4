@@ -1,0 +1,26 @@
+{
+  "name": "w_s5m4_project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "fkill :3003 -s && node ./backend/server.js",
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose",
+    "fixit": "rm -rf node_modules package-lock.json && npm cache clean --force && npm i"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/jest": "^29.5.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.44.0",
+    "fkill-cli": "^7.1.0",
+    "jest": "^29.6.0",
+    "jest-environment-jsdom": "^29.6.0",
+    "msw": "^1.2.2",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2"
+  }
+}
